@@ -1,5 +1,4 @@
 import requests
-import sqlite3
 from datetime import datetime
 
 
@@ -23,7 +22,4 @@ def fetch_data():
                     timeseries["data"]["instant"]["details"]["wind_from_direction"],
                 )
             )
-
-
-if __name__ == "__main__":
-    data = fetch_data()
+    return wind_data
